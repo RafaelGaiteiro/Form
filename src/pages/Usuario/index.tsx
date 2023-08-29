@@ -1,15 +1,15 @@
-import { Box } from '@chakra-ui/react';
-import { InformacaoPessoalForm } from './InformacaoPessoalForm';
-import { DetalheDeContatoForm } from './DetalheDeContatoForm';
+import { DefaultTemplate } from '../../components/templates/DefaultTemplate';
 import { DadoProfissionalForm } from './DadoProfissionalForm';
+import { DetalheDeContatoForm } from './DetalheDeContatoForm';
 import { InformacaoDeAcessoForm } from './InformacaoDeAcessoForm';
-import { PreferenciaEInteresseForm } from './PreferenciaEInteresseForm';
+import { InformacaoPessoalForm } from './InformacaoPessoalForm';
 import { OutraInformacaoForm } from './OutraInformacaoForm';
+import { PreferenciaEInteresseForm } from './PreferenciaEInteresseForm';
 import { TermoECondicaoForm } from './TermoECondicaoForm';
 
 export function Usuario() {
 	return (
-		<Box>
+		<DefaultTemplate>
 			<InformacaoPessoalForm />
 			<DetalheDeContatoForm />
 			<DadoProfissionalForm />
@@ -17,6 +17,6 @@ export function Usuario() {
 			<PreferenciaEInteresseForm />
 			<OutraInformacaoForm />
 			<TermoECondicaoForm />
-		</Box>
+		</DefaultTemplate>
 	);
 }
