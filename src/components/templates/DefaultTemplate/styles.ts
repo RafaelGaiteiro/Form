@@ -11,3 +11,7 @@ export const DefaultTemplateStylized = styled.div`
 	height: 100%;
 	width: 100%;
 `;
+
+export const Background = styled.div`
+	background-color: ${({ theme }) => theme.colors.darkNavyBlue};
+`;
