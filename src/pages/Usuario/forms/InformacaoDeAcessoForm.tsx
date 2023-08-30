@@ -2,7 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import { InferType, object, string } from 'yup';
 import { FormControl, FormLabel, Input, Stack } from '@chakra-ui/react';
-import { BoxEdge } from '../../components/atoms/BoxEdge';
+import { BoxEdge } from '../../../components/atoms/BoxEdge';
 
 const schema = object({
 	usuario: string(),

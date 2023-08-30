@@ -1,16 +1,16 @@
 import { FormControl, FormLabel, Input, Stack } from '@chakra-ui/react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
-import { InferType, mixed, object, string } from 'yup';
-import { BoxEdge } from '../../components/atoms/BoxEdge';
+import { InferType, object, string } from 'yup';
+import { BoxEdge } from '../../../components/atoms/BoxEdge';
 
 const schema = object({
-	fotoDePerfil: mixed(),
-	descricaoOuBiografia: string(),
+	areasDeInteresse: string(),
+	comoSoubeDeNos: string(),
 });
 type FormData = InferType<typeof schema>;
 
-export function OutraInformacaoForm() {
+export function PreferenciaEInteresseForm() {
 	const {
 		register,
 		handleSubmit,
@@ -26,12 +26,12 @@ export function OutraInformacaoForm() {
 			<BoxEdge>
 				<Stack>
 					<FormControl>
-						<FormLabel>Foto de Perfil</FormLabel>
-						<Input placeholder='Clique ou arraste para adicionar um arquivo' type='file' />
+						<FormLabel>Áreas de Interesse</FormLabel>
+						<Input placeholder='Digite as suas áreas de interesse' />
 					</FormControl>
 					<FormControl>
-						<FormLabel>Descrição ou Biografia</FormLabel>
-						<Input />
+						<FormLabel>Como soube de nós?</FormLabel>
+						<Input placeholder='Digite como soube de nós' />
 					</FormControl>
 				</Stack>
 			</BoxEdge>

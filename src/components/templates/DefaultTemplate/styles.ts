@@ -8,10 +8,11 @@ export const DefaultTemplateStylized = styled.div`
 		'footer footer';
 	grid-template-columns: 300px auto;
 	grid-template-rows: 120px auto 200px;
-	height: 100%;
+	min-height: 100vh;
 	width: 100%;
 `;
 
 export const Background = styled.div`
-	background-color: ${({ theme }) => theme.colors.darkNavyBlue};
+	height: auto;
+	background-color: ${({ theme }) => theme.colors.lightGray};
 `;

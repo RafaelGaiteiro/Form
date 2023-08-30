@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
 import { Aside } from '../../molecules/Aside';
 import { Content } from '../../molecules/Content';
+import { Footer } from '../../molecules/Footer';
 import { Header } from '../../molecules/Header';
 import { Background, DefaultTemplateStylized } from './styles';
-import { Footer } from '../../molecules/Footer';
 
 type DefaultTemplateProps = {
 	children: ReactNode;

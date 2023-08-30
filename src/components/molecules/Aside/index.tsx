@@ -1,4 +1,6 @@
-import { Button } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { useTheme } from 'styled-components';
+import { Tabs } from '../../atoms/Tabs';
 import { AsideStylized } from './styles';
 
 export type AsideProps = {
@@ -6,14 +8,22 @@ export type AsideProps = {
 };
 
 export function Aside({ gridArea }: AsideProps) {
+	const { colors } = useTheme();
+
 	return (
 		<AsideStylized gridArea={gridArea}>
-			<Button>Informações Pessoais</Button>
-			<Button>Detalhes de Contato</Button>
-			<Button>Dados Profissionais</Button>
-			<Button>Informações de Acesso</Button>
-			<Button>Preferências e Interesses</Button>
-			<Button>Outras Informações</Button>
+			<Box
+				display='flex'
+				flexDirection='column'
+				alignItems='flex-start'
+				p='24px'
+				m='0 16px'
+				rowGap='8px'
+				backgroundColor={colors.background}
+				rounded='8px'
+			>
+				<Tabs />
+			</Box>
 		</AsideStylized>
 	);
 }
