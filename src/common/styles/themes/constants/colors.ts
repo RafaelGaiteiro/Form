@@ -1,4 +1,7 @@
 export const colors = {
+	background: '#e4e7e9',
+	backgroundContent: '#F7F7F7',
+
 	green: '#1FC662',
 	white: '#FFFFFF',
 	black: '#353535',
@@ -19,8 +22,6 @@ export const colors = {
 	darkRed: '#B53629',
 	lightBlueishGrey: '#E6F3FF',
 	lightGray: '#CFDBE6',
-
-	background: '#F7F7F7',
 	tabBackground: '#f4f7f9',
 	header: '#3C424F',
 	placeholder: '#B6B6B6',
@@ -39,7 +40,6 @@ export const colors = {
 	optionSelect: '#e1e5ec',
 	borderSelect2: '#93a1bb',
 	inputFileBlue: '#0072DC',
-
 	darken: 'rgba(0, 0, 0, 0.1)',
 	lighten: 'rgba(255, 255, 255, 0.1)',
 };

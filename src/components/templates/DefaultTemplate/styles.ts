@@ -14,5 +14,5 @@ export const DefaultTemplateStylized = styled.div`
 
 export const Background = styled.div`
 	height: auto;
-	background-color: ${({ theme }) => theme.colors.lightGray};
+	background-color: ${({ theme }) => theme.colors.background};
 `;

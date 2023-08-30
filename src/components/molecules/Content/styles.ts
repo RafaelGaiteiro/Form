@@ -9,6 +9,6 @@ export const ContentStylized = styled.main<ContentProps>`
 	min-height: 100%;
 	width: 100%;
 	grid-area: ${({ gridArea }) => gridArea};
-	background: ${({ theme }) => theme.colors.background};
+	background: ${({ theme }) => theme.colors.backgroundContent};
 	border-radius: 8px 0 0 8px;
 `;
