@@ -22,7 +22,7 @@ export function TermoECondicaoForm() {
 	return (
 		<form>
 			<Stack>
-				<Checkbox defaultChecked>Aceito os Termos e Condições</Checkbox>
+				<Checkbox>Aceito os Termos e Condições</Checkbox>
 			</Stack>
 		</form>
 	);

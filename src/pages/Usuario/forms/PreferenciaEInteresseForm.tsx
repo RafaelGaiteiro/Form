@@ -2,7 +2,7 @@ import { FormControl, FormLabel, Input, Stack } from '@chakra-ui/react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import { InferType, object, string } from 'yup';
-import { BoxEdge } from '../../../components/atoms/BoxEdge';
+import { FormContainer } from '../../../components/atoms/FormContainer';
 
 const schema = object({
 	areasDeInteresse: string(),
@@ -22,19 +22,17 @@ export function PreferenciaEInteresseForm() {
 	function osSubmit(data: FormData) {}
 
 	return (
-		<form>
-			<BoxEdge>
-				<Stack>
-					<FormControl>
-						<FormLabel>Áreas de Interesse</FormLabel>
-						<Input placeholder='Digite as suas áreas de interesse' />
-					</FormControl>
-					<FormControl>
-						<FormLabel>Como soube de nós?</FormLabel>
-						<Input placeholder='Digite como soube de nós' />
-					</FormControl>
-				</Stack>
-			</BoxEdge>
-		</form>
+		<FormContainer>
+			<Stack>
+				<FormControl>
+					<FormLabel>Áreas de Interesse</FormLabel>
+					<Input placeholder='Digite as suas áreas de interesse' />
+				</FormControl>
+				<FormControl>
+					<FormLabel>Como soube de nós?</FormLabel>
+					<Input placeholder='Digite como soube de nós' />
+				</FormControl>
+			</Stack>
+		</FormContainer>
 	);
 }

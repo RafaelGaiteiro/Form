@@ -2,7 +2,6 @@ import { FormControl, FormLabel, Input, Stack } from '@chakra-ui/react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import { InferType, object, string } from 'yup';
-import { BoxEdge } from '../../../components/atoms/BoxEdge';
 import { FormContainer } from '../../../components/atoms/FormContainer';
 
 const schema = object({
